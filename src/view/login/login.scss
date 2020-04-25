@@ -1,0 +1,149 @@
+.login {
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f5f0;
+  background-color: #fff;
+  // 顶部区域
+  .logo-wrap {
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    .logo {
+      display: block;
+      margin: 4px auto 4px 200px;
+      width: 50px;
+      height: 50px;
+      background-size: 100%;
+    }
+  }
+  // 中间登录区域
+  $bg-color: #eff2f7;
+  .main-bd {
+    padding-bottom: 157px;
+    background-color: #fff;
+    .login-box-wrap {
+      box-sizing: border-box;
+      padding: 120px 0 32px;
+      height: 720px;
+      background-color: $bg-color;
+      &::after {
+        content: ' ';
+        display: block;
+        height: 0px;
+        position: relative;
+        top: 190px;
+        border: 67px solid $bg-color;
+        border-width: 67px 50vw 0;
+        border-color: $bg-color transparent;
+      }
+      .login-box {
+        display: flex;
+        margin: 0 auto;
+        padding: 50px 15px;
+        height: 405px;
+        width: 1100px;
+        background-color: #fff;
+        border: 1px solid #f7f8fa;
+        border-radius: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        .login-left {
+          flex: 0 0 695px;
+          border-right: 1px solid #ccc;
+          .input-group {
+            position: relative;
+            margin: 20px auto;
+            display: block;
+            height: 38px;
+            width: 310px;
+            box-sizing: border-box;
+            border: 2px solid #d7e0ef;
+            border-radius: 4px;
+            input::-webkit-input-placeholder {
+              color: #b3b3b3;
+            }
+            input {
+              display: block;
+              width: 100%;
+              box-sizing: border-box;
+              border: none;
+              outline: none;
+              height: 34px;
+              line-height: 34px;
+              font-size: 15px;
+              padding-left: 12px;
+            }
+          }
+          .code-group {
+            border: none;
+            .code {
+              float: left;
+              width: 160px;
+              border: 2px solid #eee;
+              border-radius: 5px;
+              box-sizing: border-box;
+              padding-left: 10px;
+            }
+            .img-code {
+              float: left;
+              margin: 0 0 0 20px;
+              width: 128px;
+              height: 35px;
+              border: 2px solid #eee;
+              border-radius: 5px;
+              box-sizing: border-box;
+              img {
+                position: static;
+                margin-top: -2px;
+                width: 100%;
+                height: 100%;
+                display: block;
+                cursor: pointer;
+              }
+            }
+          }
+          .login-btn-group {
+            height: 38px;
+            width: 310px;
+            background-color: #ff8532;
+            margin: 30px auto 0;
+            line-height: 38px;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          .link-group {
+            height: 44px;
+            font-size: 15px;
+            line-height: 44px;
+            color: #999;
+          }
+        }
+        .login-right {
+          flex: 1;
+          padding: 80px 0 0 100px;
+          line-height: 22px;
+          text-align: left;
+          p {
+            height: 22px;
+            font-size: 18px;
+            color: #323232;
+          }
+          .active {
+            color: #ff8532;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .main-ft {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+}

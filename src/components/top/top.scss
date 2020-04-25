@@ -1,0 +1,17 @@
+.logo-wrap.components-top {
+  float: left;
+}
+
+.user-wrap.components-top {
+  padding: 0 20px;
+  float: right;
+  font-size: 16px;
+  .btn-group {
+    float: left;
+    margin: 0 15px;
+    cursor: pointer;
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
